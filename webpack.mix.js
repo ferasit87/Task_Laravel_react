@@ -14,15 +14,12 @@ let mix = require('laravel-mix');
 mix.webpackConfig({
     resolve: {
         alias: {
-
             Task: path.resolve(__dirname, 'resources', 'assets/js/components/Task.jsx') ,
             TaskForm: path.resolve(__dirname, 'resources', 'assets/js/components/TaskForm.jsx') ,
             ResultMessage: path.resolve(__dirname, 'resources', 'assets/js/components/ResultMessage.jsx') ,
             searchData: path.resolve(__dirname, 'resources', 'assets/js/api/searchData.jsx') ,
-
-
-
-        }
+            TextForm: path.resolve(__dirname, 'resources', 'assets/js/components/TextForm.jsx') ,
+         }
     }
 });
 mix.react('resources/assets/js/App.jsx', 'public/js');

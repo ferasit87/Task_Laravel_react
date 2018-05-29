@@ -8350,3 +8350,16 @@ button.close {
   }
 }
 
+.dropdown.search {
+  position: relative;
+  top: -15px;
+  margin-left: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.list-hover-arrow {
+  cursor: pointer;
+}
+

@@ -7,3 +7,14 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.dropdown.search {
+  position: relative;
+  top: -15px;
+  margin-left: 16px;
+  width: fit-content;
+}
+
+.list-hover-arrow{
+  cursor: pointer;
+}
