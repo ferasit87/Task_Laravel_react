@@ -27410,12 +27410,12 @@ module.exports = ResultMessage;
 
 var axios = __webpack_require__(242);
 
-var SEARCH_URL = '/articles';
+var SEARCH_URL = 'https://obscure-tor-28783.herokuapp.com//articles?search';
 
 module.exports = {
     search: function search(need) {
 
-        var requestUrl = SEARCH_URL + '?search=' + need;
+        var requestUrl = SEARCH_URL + '=' + need;
 
         return axios.get(requestUrl).then(function (res) {
 
