@@ -6,6 +6,7 @@ module.exports = {
     search: function (need) {
 
         var requestUrl = `${SEARCH_URL}?search=${need}`;
+
         return axios.get(requestUrl).then(function (res) {
 
             if (res.data.total > 0) {
