@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-const SEARCH_URL = '/articles/';
+const SEARCH_URL = '/articles';
 
 module.exports = {
     search: function (need) {
