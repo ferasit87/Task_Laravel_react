@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Laravel React application</title>
-    <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="/css/app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h2 style="text-align: center"> Laravel and React application  </h2>
