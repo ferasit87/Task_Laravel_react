@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-const SEARCH_URL = 'https://obscure-tor-28783.herokuapp.com/articles';
+const SEARCH_URL = '/articles/';
 
 module.exports = {
     search: function (need) {
