@@ -11,5 +11,19 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.webpackConfig({
+    resolve: {
+        alias: {
+
+            Task: path.resolve(__dirname, 'resources', 'assets/js/components/Task.jsx') ,
+            TaskForm: path.resolve(__dirname, 'resources', 'assets/js/components/TaskForm.jsx') ,
+            ResultMessage: path.resolve(__dirname, 'resources', 'assets/js/components/ResultMessage.jsx') ,
+            searchData: path.resolve(__dirname, 'resources', 'assets/js/api/searchData.jsx') ,
+
+
+
+        }
+    }
+});
+mix.react('resources/assets/js/App.jsx', 'public/js');
+mix.sass('resources/assets/sass/app.scss', 'public/css');
