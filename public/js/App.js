@@ -27410,7 +27410,7 @@ module.exports = ResultMessage;
 
 var axios = __webpack_require__(242);
 
-var SEARCH_URL = '/articles/';
+var SEARCH_URL = '/articles';
 
 module.exports = {
     search: function search(need) {
