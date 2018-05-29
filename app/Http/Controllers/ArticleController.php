@@ -18,8 +18,6 @@ class ArticleController extends Controller
     {
         $search = $request->search ?? '';
         $articles = $this->article->searchByTitle($search);
-        header('Content-Type: document; charset=utf-8');
-        echo json_encode($articles->paginate());
-        exit;
-      }
+        return response()->json($articles->paginate(), 200);
+     }
 }
