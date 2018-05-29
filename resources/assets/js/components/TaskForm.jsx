@@ -3,7 +3,9 @@ var React = require('react');
 var TaskForm = React.createClass({
     onChange: function (e) {
         var need = this.refs.need.value;
-        this.props.onSearch(need);
+        if (need.length > 2) {
+            this.props.onSearch(need);
+        }
     },
     render: function () {
         return (

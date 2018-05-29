@@ -14,10 +14,11 @@ class ArticleController extends Controller
     {
         $this->article = $article;
     }
+
     public function index(Request $request)
     {
         $search = $request->search ?? '';
         $articles = $this->article->searchByTitle($search);
         return response()->json($articles->paginate(), 200);
-     }
+    }
 }

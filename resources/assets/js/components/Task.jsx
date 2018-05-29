@@ -73,7 +73,7 @@ var Task = React.createClass({
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
                             <div className="panel panel-default">
-                                <h3  className="panel-heading" >Article search system</h3>
+                                <h3 className="panel-heading">Article search system</h3>
                                 <TaskForm onSearch={this.handleSearch}/>
                                 {renderMessage()}
                             </div>
