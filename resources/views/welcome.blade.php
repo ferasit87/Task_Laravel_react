@@ -12,6 +12,6 @@
 <body>
 <h2 style="text-align: center"> Laravel and React application </h2>
 <div id="root"></div>
-<script src="{{mix('js/App.js')}}" ></script>
+<script src="/js/App.js" ></script>
 </body>
 </html>
